@@ -20,7 +20,7 @@ function init() {
 
   // Add event listener for remove buttons
   articleElem.on("click", ".remove-item", function () {
-    const index = $(this).closest("tr").index() - 1;
+    const index = $(this).closest("tr").index()-1;
     console.log(index);
     removeItem(ADATLISTA, index);
   });
@@ -80,5 +80,7 @@ function generateTable(data, columnNames, removeClass) {
 
 function removeItem(data, index) {
   data.splice(index, 1);
+  $("article").off(); // Remove event listeners
   init();
 }
+

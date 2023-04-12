@@ -3,6 +3,9 @@ main{
     padding: 0;
     max-width: 1000px;
 }
+body{
+    background-color: beige;
+}
 ul li{
     list-style: none;
     text-decoration: none;
@@ -18,5 +21,15 @@ ul li a{
 section{
     margin: auto;
     padding: 10px;
+    border: 1px black;
 
 }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-right:  1px solid black;
+    border-left:  1px solid black;;
+  }
+  
